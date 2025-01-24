@@ -7,8 +7,6 @@ WORKDIR /app
 # Copy the local application files to the working directory
 # This includes the .env file for environment variables
 COPY . .
-COPY .env /app/.env
-
 
 # Install dependencies with pip, including python-dotenv for handling .env files
 RUN pip install --no-cache-dir flask litellm python-dotenv
